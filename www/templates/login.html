@@ -1,0 +1,29 @@
+<ion-view title="Login" id="page7" class=" ">
+    <ion-content padding="true" class="has-header">
+        <form id="login-form4" class="list ">
+            <div class="spacer" style="height: 100px;"></div>
+            <ion-list id="login-list4" class=" ">
+                <label class="item item-input">
+                    <input type="text" placeholder="Username" id="login-input10">
+                </label>
+                  <ng-show
+                    ng-show="sucessLogin">
+                    <p class="help-block error-text" ng-message="required">Username is required.</p>
+                  </ng-show>
+                <label class="item item-input">
+                    <input type="password" placeholder="Password" id="login-input11">
+                </label>
+              <ng-show
+                ng-show="sucessLogin">
+                <p class="help-block error-text" ng-message="required">Password is required.</p>
+              </ng-show>
+            </ion-list>
+            <a id="login-button7" style="font-weight:500;border-radius:0px 0px 0px 0px;" class=" button button-dark  button-block" ng-click="signin()">Login</a>
+            <button id="login-button8" style="color:#000000;" class=" button button-light  button-block button-clear ">Cadastrar</button>
+        </form>
+      <div>
+        {{data}}
+      </div>
+    </ion-content>
+</ion-view>
+<!--ui-sref="menu.home"-->
